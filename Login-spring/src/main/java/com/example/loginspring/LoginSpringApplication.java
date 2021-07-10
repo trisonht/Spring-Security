@@ -17,4 +17,23 @@ public class LoginSpringApplication {
     public String sayHello(@RequestParam(value = "myName", defaultValue = "Word") String name) {
         return String.format("Hello %s!", name);
     }
+
+    @GetMapping("/admin")
+    public String sayAdmin(@RequestParam(value = "myName", defaultValue = "Wordd") String name) {
+        return String.format("Admin Hello %s", name);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
